@@ -166,6 +166,9 @@ span.navbar-text {
 	height: 100%;
 	position: absolute;
 }
+.navbar-toggler .-icon{
+  background-color: #8b8b8b !important;
+}
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;
@@ -216,7 +219,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
  .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/imgs/banner-bg.png');
+  background-image: url('./assets/imgs/istockphoto-498478219-612x612.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -377,6 +380,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     z-index: -1;
     transition: 0.3s ease-in-out;
 }
+.project .nav-pills-first::before{
+  border-radius: 55px 0px 0px 55px;
+}
+.project .nav-pills-second::before{
+  border-radius: 0px 55px 55px 0px;
+}
 .project .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
 }
@@ -397,9 +406,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
+  border-radius: 10px;
   overflow: hidden;
   margin-bottom: 24px;
+  height: 220px;
+}
+.proj-imgbx img{
+  height: 220px;
 }
 .proj-imgbx::before {
   content: "";
@@ -598,3 +611,59 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 } 
+.skill-slider .item img {
+  width: 60%;
+  margin: 0 auto 15px auto;
+  height: 110px;
+  object-fit: fill;
+}
+.react-multiple-carousel__arrow{
+  top: 22% !important;
+}
+
+
+/* RESPONSIVE */
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .newsletter-bx{
+    padding: 30px 45px;
+  }
+  .new-email-bx button{
+    padding: 20px 32px;
+  }
+  .skill-slider .item img {
+    width: 70%;
+    margin: 0 auto 15px auto;
+    height: 110px;
+    object-fit: fill;
+}
+.react-multiple-carousel__arrow{
+  top: 22% !important;
+}
+}
+@media screen and (max-width: 767px){
+  .banner,
+  .project{
+    margin: 0 10px 0 10px;
+  }
+  .contact{
+    padding: 60px 25px 200px 25px;
+  }
+  .newsletter-bx{
+    padding: 30px 45px;
+  }
+  .new-email-bx button{
+    padding: 20px 32px;
+  }
+  .skill-slider .item img {
+    width: 70%;
+    margin: 0 auto 15px auto;
+    height: 110px;
+    object-fit: fill;
+}
+.banner h1 {
+  font-size: 50px;
+}
+.react-multiple-carousel__arrow{
+  top: 22% !important;
+}
+}

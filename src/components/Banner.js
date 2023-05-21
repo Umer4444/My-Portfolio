@@ -12,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer" ];
+  const toRotate = [ "Full Stack Developer", "Web Developer", "Web Designer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Umer`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Umer`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Developer", "Web Developer", "Web Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I'm a professional Web Application Developer. I've been making websites for over three years. I'm flexible with my working hours and would be delighted to collaborate closely with any present professionals you deal with. I eagerly await your response!</p>
                   <Nav.Link href='#connect'> <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button></Nav.Link>
 
